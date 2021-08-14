@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "icons";
+  font-display: swap;
+  src: url("../fonts/icons.woff") format("woff"), url("../fonts/icons.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+%ic {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+[class^="_icon"],
+[class*="_icon"] {
+  &:before {
+    @extend %ic;
+    display: block;
+  }
+}
+
+._icontg:before {
+  content: "\e904";
+}
+._iconfb:before {
+  content: "\e914";
+}
+._iconmapdabl:before {
+  content: "\e903";
+}
+._icongoogle:before {
+  content: "\e901";
+}
+._iconapple:before {
+  content: "\e902";
+}
+._iconright-arrow:before {
+  content: "\e905";
+}
+._icontruck:before {
+  content: "\e900";
+}
+._iconright-arrow2:before {
+  content: "\e906";
+}
+._iconuser:before {
+  content: "\e907";
+}
+._iconcheck:before {
+  content: "\e908";
+}
+._icontime:before {
+  content: "\e909";
+}
+._iconmap:before {
+  content: "\e90a";
+}
+._iconphone-1:before {
+  content: "\e90b";
+}
+._iconnavigation:before {
+  content: "\e90c";
+}
+._iconcalendar:before {
+  content: "\e90d";
+}
+._iconmassa:before {
+  content: "\e90e";
+}
+._iconarro:before {
+  content: "\e90f";
+}
+._iconagsrr:before {
+  content: "\e910";
+}
+._iconVector:before {
+  content: "\e911";
+}
+._iconwallet:before {
+  content: "\e912";
+}
+._iconwarehouse:before {
+  content: "\e913";
+}
+._iconyoutube:before {
+  content: "\e916";
+}
+._iconclock:before {
+  content: "\e917";
+}
+._iconglobe:before {
+  content: "\e921";
+}
+._iconGroup-2:before {
+  content: "\e922";
+}
+._iconGroup-3:before {
+  content: "\e923";
+}
+._iconmap-line:before {
+  content: "\e924";
+}
+._iconmail:before {
+  content: "\e925";
+}
+._iconwork:before {
+  content: "\e926";
+}
+._iconinsta:before {
+  content: "\e9a5";
+}
+._iconsupport:before {
+  content: "\e9c0";
+}
+._icontg-big:before {
+  content: "\e9c3";
+}

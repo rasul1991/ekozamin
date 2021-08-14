@@ -1,0 +1,314 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+
+@import "fonts";
+
+@import "icons";
+
+@import "grid";
+$font-family: "AvenirNextCyr";
+$main-color: #ee6800;
+$second-color: #1b3b8d;
+
+/*Обнуление*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+// html {
+// 	overflow: hidden;
+// }
+html,
+body {
+	font-family: $font-family;
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	background-color: #e5e5e5;
+	font-weight: 450;
+}
+body.lock {
+	@media (max-width: 768px) {
+		overflow: hidden;
+	}
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+	color: $second-color;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+	max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+/*--------------------*/
+.relative {
+	position: relative;
+}
+.pulse {
+	height: 80px;
+	width: 80px;
+	background: #ee6800;
+	position: relative;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+	font-size: 50px;
+	color: #ffffff;
+	margin-top: 13%;
+}
+.pulse:before,
+.pulse:after {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 50%;
+	z-index: 1;
+	opacity: 0.7;
+}
+.pulse:before {
+	animation: pulse 2s ease-out infinite;
+}
+.pulse:after {
+	animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse {
+	100% {
+		transform: scale(2.5);
+		opacity: 0;
+	}
+}
+.white-popup {
+	position: relative;
+	background: #fff;
+	padding: 40px;
+	width: auto;
+	max-width: 500px;
+	margin: 20px auto;
+	.section-title {
+		h3 {
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 29px;
+			text-align: center;
+			color: #ffac85;
+			margin-bottom: 16px;
+		}
+		p {
+			font-size: 18px;
+			line-height: 22px;
+			text-align: center;
+			color: #15525e;
+			margin-bottom: 40px;
+		}
+	}
+	.form-group {
+		position: relative;
+		.icon {
+			position: absolute;
+			top: 25%;
+			left: 5%;
+			color: #bbc3c4;
+		}
+		input {
+			margin-bottom: 24px;
+			text-indent: 30px;
+		}
+	}
+	.text-area {
+		.icon {
+			position: absolute;
+			top: 18px;
+			left: 5%;
+			color: #bbc3c4;
+		}
+		textarea {
+			margin-bottom: 24px;
+			text-indent: 30px;
+		}
+	}
+}
+.hidden {
+	display: none;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+select {
+	border: 1px solid #c2c5cc;
+	width: 100%;
+	padding: 15px;
+	@media (max-width: 768px) {
+		margin-bottom: 15px;
+	}
+	&::placeholder {
+		color: #bbc3c4;
+	}
+	&:focus {
+		border: 1px solid #ffceb7;
+	}
+	&:focus::placeholder {
+		color: $main-color;
+	}
+}
+textarea {
+	border: 1px solid #d3dcde;
+	width: 100% !important;
+	padding: 15px;
+	text-indent: 20px;
+	box-sizing: border-box;
+	@media (max-width: 768px) {
+		margin-bottom: 15px;
+	}
+	&::placeholder {
+		color: #bbc3c4;
+	}
+	&:focus {
+		border: 1px solid #ffceb7;
+	}
+	&:focus::placeholder {
+		color: $main-color;
+	}
+}
+section {
+	overflow: hidden;
+}
+#button {
+	display: inline-block;
+	background-color: #ffceb7;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border-radius: 4px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1000;
+	padding: 18px;
+	transform: rotate(90deg);
+}
+#button:hover {
+	cursor: pointer;
+	background-color: $main-color;
+}
+#button:active {
+	background-color: $main-color;
+}
+#button.show {
+	opacity: 1;
+	visibility: visible;
+}
+.btn {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	color: $main-color;
+	background: #ee6800;
+	padding: 14px 30px;
+	width: 100%;
+	display: block;
+	text-align: center;
+	transition: all 0.3s ease 0s;
+	&:hover {
+		background: $main-color;
+		color: $second-color;
+	}
+}
+.title {
+	font-family: AvenirNextCyr;
+	font-style: normal;
+	font-weight: 750;
+	font-size: 40px;
+	line-height: 49px;
+	text-align: center;
+	color: $second-color;
+	display: block;
+	width: 100%;
+	margin-bottom: 40px;
+	@media (max-width: 768px) {
+		font-weight: 700;
+		font-size: 27px;
+		line-height: 37px;
+		color: $second-color;
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding: 0 15px;
+		margin-bottom: 20px;
+	}
+}
