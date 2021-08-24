@@ -5,4 +5,26 @@ jQuery(document).ready(function ($) {
     var parallaxInstance = new Parallax(about);
     var scene = document.getElementById('prod');
     var parallaxInstance = new Parallax(prod);
+
+    $(function () {
+
+        //BEGIN
+        $(".accordion__title").on("click", function (e) {
+
+            e.preventDefault();
+            var $this = $(this);
+
+            if (!$this.hasClass("accordion-active")) {
+                $(".accordion__content").slideUp(400);
+                $(".accordion__title").removeClass("accordion-active");
+                $('.accordion__arrow').removeClass('accordion__rotate');
+            }
+
+            $this.toggleClass("accordion-active");
+            $this.next().slideToggle();
+            $('.accordion__arrow', this).toggleClass('accordion__rotate');
+        });
+        //END
+
+    });
 });

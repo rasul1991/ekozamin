@@ -1,34 +1,26 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: "Gilroy";
+  font-family: "TT Norms Pro";
   font-display: swap;
-  src: url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
-  src: url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
-  src: url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.woff2") format("woff2");
+  src: url("../fonts/TTNormsPro-Regular.woff") format("woff"), url("../fonts/TTNormsPro-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Gilroy";
+  font-family: "TT Norms Pro";
   font-display: swap;
-  src: url("../fonts/Gilroy-Semibold.woff") format("woff"), url("../fonts/Gilroy-Semibold.woff2") format("woff2");
-  font-weight: 600;
+  src: url("../fonts/TTNormsPro-Bold.woff") format("woff"), url("../fonts/TTNormsPro-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Norms Pro";
+  font-display: swap;
+  src: url("../fonts/TTNormsPro-Medium.woff") format("woff"), url("../fonts/TTNormsPro-Medium.woff2") format("woff2");
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -1526,7 +1518,7 @@ aside {
 
 html,
 body {
-  font-family: "Gilroy";
+  font-family: "TT Norms Pro";
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -1907,7 +1899,7 @@ section {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  font-family: Gilroy;
+  font-family: TT Norms Pro;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -2001,7 +1993,7 @@ section {
 }
 
 .head-block header .logo .logo-txt {
-  font-family: Gilroy;
+  font-family: TT Norms Pro;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -2052,7 +2044,7 @@ section {
 }
 
 .head-block header .head-telegram a .telegram-txt {
-  font-family: Gilroy;
+  font-family: TT Norms Pro;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -2080,7 +2072,7 @@ section {
 }
 
 .head-block header .head-phone a h2 {
-  font-family: Gilroy;
+  font-family: TT Norms Pro;
   font-style: normal;
   font-weight: 600;
   font-size: calc(21px + 11 * (100vw / 1736));
@@ -2094,7 +2086,7 @@ section {
 }
 
 .head-block header .head-phone a p {
-  font-family: Gilroy;
+  font-family: TT Norms Pro;
   font-style: normal;
   font-weight: bold;
   font-size: 13px;
@@ -2116,7 +2108,7 @@ section {
 }
 
 .block-1_left h1 {
-  font-family: Gilroy;
+  font-family: TT Norms Pro;
   font-style: normal;
   font-weight: normal;
   font-size: calc(23px + 7 * (100vw / 1920));
@@ -2160,7 +2152,7 @@ section {
 }
 
 .block-1_left .btn-blcok span {
-  font-family: Gilroy;
+  font-family: TT Norms Pro;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -2242,7 +2234,7 @@ section {
 }
 
 .block-1 .icon-box h4 {
-  font-family: Gilroy;
+  font-family: TT Norms Pro;
   font-style: normal;
   font-weight: bold;
   font-size: 15px;
@@ -2267,7 +2259,7 @@ section {
 }
 
 .block-1 .icon-box .icon-box_text {
-  font-family: Gilroy;
+  font-family: TT Norms Pro;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -2314,7 +2306,7 @@ section {
 }
 
 .block-2 .stats-body .stats-text {
-  font-family: Gilroy;
+  font-family: TT Norms Pro;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -2354,7 +2346,7 @@ section {
 }
 
 .block-3 .subtitle {
-  font-family: Gilroy;
+  font-family: TT Norms Pro;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -2367,7 +2359,7 @@ section {
 }
 
 .block-3 .green-text {
-  font-family: Gilroy;
+  font-family: TT Norms Pro;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -2385,7 +2377,7 @@ section {
 }
 
 .block-3 h4 {
-  font-family: Gilroy;
+  font-family: TT Norms Pro;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -2401,7 +2393,7 @@ section {
 }
 
 .block-3 .mission {
-  font-family: Gilroy;
+  font-family: TT Norms Pro;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -2435,7 +2427,7 @@ section {
 }
 
 .block-4 .subtitle {
-  font-family: Gilroy;
+  font-family: TT Norms Pro;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -2462,7 +2454,7 @@ section {
 }
 
 .block-4 .product-box .product-name {
-  font-family: Gilroy;
+  font-family: TT Norms Pro;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -2505,7 +2497,7 @@ section {
 }
 
 .block-4 .product-box .product-info .product-item .count {
-  font-family: Gilroy;
+  font-family: TT Norms Pro;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -2523,7 +2515,7 @@ section {
 }
 
 .block-4 .product-box .product-info .product-item .price {
-  font-family: Gilroy;
+  font-family: TT Norms Pro;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -2617,7 +2609,7 @@ section {
 }
 
 .block-5 .inner .info-box .info-box-body .text {
-  font-family: Gilroy;
+  font-family: TT Norms Pro;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -2654,7 +2646,7 @@ section {
 }
 
 .block-6 .right-block .subtitle {
-  font-family: Gilroy;
+  font-family: TT Norms Pro;
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
@@ -2674,7 +2666,7 @@ section {
 }
 
 .block-6 .right-block .txt {
-  font-family: Gilroy;
+  font-family: TT Norms Pro;
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
@@ -2688,7 +2680,7 @@ section {
 }
 
 .block-6 .right-block .b-txt {
-  font-family: Gilroy;
+  font-family: TT Norms Pro;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -2704,6 +2696,364 @@ section {
 
 .block-6 .right-block .btn-block .btn {
   margin-top: 54px;
+}
+
+.block-7 {
+  position: relative;
+  display: block;
+  padding: 100px 0;
+}
+
+.block-7 .subtitle {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #3b3e3d;
+  margin-bottom: 20px;
+}
+
+.block-7 .title {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.block-7 .accardion-body {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 20px 40px 40px 40px;
+}
+
+.block-7 .accardion-top {
+  display: block;
+}
+
+.block-7 .accardion-top .icon-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.block-7 .accardion-top p {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  color: #3b3e3d;
+  margin-bottom: 30px;
+}
+
+.block-7 .accordion__item {
+  margin: 5px auto;
+}
+
+.block-7 .accordion__item .accordion__title {
+  position: relative;
+  display: block;
+  padding: 13px 60px 15px 13px;
+  margin-bottom: 2px;
+  text-decoration: none;
+  border-radius: 3px;
+  -webkit-transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  font-family: TT Norms Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  color: #4b4b4b;
+}
+
+.block-7 .accordion__item .accordion__title .accordion__arrow {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: #76eba1;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 5px;
+  border-radius: 50%;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.block-7 .accordion__item .accordion__rotate {
+  -webkit-transform: rotate(225deg);
+      -ms-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+
+.block-7 .accordion__item .accordion__content {
+  padding: 30px;
+  margin-bottom: 2px;
+  display: none;
+  font-family: TT Norms Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #4b4b4b;
+  background: #f8f8f8;
+}
+
+.block-7 .accordion__item .accordion__arrow-item {
+  font-weight: 700;
+}
+
+.block-8 {
+  padding-bottom: 100px;
+  position: relative;
+  display: block;
+  overflow: visible;
+}
+
+.block-8 .list-img {
+  position: absolute;
+  left: 0;
+  top: -32%;
+  z-index: -1;
+}
+
+.block-8 .title {
+  margin-bottom: 50px;
+}
+
+.block-8 .iconbox {
+  display: block;
+  text-align: center;
+}
+
+.block-8 .iconbox .icon {
+  margin-bottom: 50px;
+}
+
+.block-8 .iconbox .txt {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+.block-8 .iconbox .txt span {
+  color: #5fd68b;
+}
+
+.block-9 {
+  position: relative;
+  overflow: visible;
+  display: block;
+  padding-bottom: 100px;
+}
+
+.block-9 .title {
+  margin-bottom: 55px;
+}
+
+.block-9 .lis-img {
+  position: absolute;
+  right: 0;
+  top: -31%;
+  z-index: -1;
+}
+
+.block-9 .subtitle {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #3b3e3d;
+  margin-bottom: 20px;
+}
+
+.block-9 .bx-1::before {
+  content: "#01";
+  position: absolute;
+  top: 0;
+  left: -3%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: calc(70px + 30 * (100vw / 1920));
+  font-family: "TT Norms Pro";
+  line-height: 140%;
+  text-align: center;
+  color: #e9f3ed;
+}
+
+.block-9 .bx-2::before {
+  content: "#02";
+  position: absolute;
+  top: 0;
+  left: -3%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  font-family: "TT Norms Pro";
+  line-height: 140%;
+  text-align: center;
+  color: #e9f3ed;
+}
+
+.block-9 .bx-3::before {
+  content: "#03";
+  position: absolute;
+  top: 0;
+  left: -3%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  font-family: "TT Norms Pro";
+  line-height: 140%;
+  text-align: center;
+  color: #e9f3ed;
+}
+
+.block-9 .iconbox {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  display: block;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.block-9 .iconbox .iconbox-body {
+  border: 1px solid #c4c4c4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  text-align: center;
+  padding: 70px 20px 40px 20px;
+  position: relative;
+  min-height: 300px;
+}
+
+.block-9 .iconbox .iconbox-body .icon {
+  margin-bottom: 25px;
+}
+
+.block-9 .iconbox .iconbox-body .txt {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  color: #4b4b4b;
+}
+
+.block-10 {
+  position: relative;
+  display: block;
+  background: #f7f9fa;
+  padding: 100px 0;
+}
+
+.block-10 .container {
+  position: relative;
+}
+
+.block-10 .dollar-l {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.block-10 .dollar-r {
+  position: absolute;
+  right: 0;
+  bottom: 20%;
+}
+
+.block-10 .subtitle {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3b3e3d;
+  margin-bottom: 20px;
+}
+
+.block-10 .title {
+  margin-bottom: 20px;
+}
+
+.block-10 .sub {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #3b3e3d;
+}
+
+.block-10 .img-box .img {
+  display: block;
+}
+
+.block-10 .img-box .title {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #282828;
+  position: relative;
+}
+
+.block-10 .img-box .title::after {
+  content: "";
+  height: 1px;
+  width: 100px;
+  background: #1d976c;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -50%;
+}
+
+.block-10 .img-box .txt {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: #5f5f5f;
 }
 
 @media (min-width: 768px) {
@@ -6707,6 +7057,10 @@ section {
     display: none;
   }
 
+  .block-5 .inner {
+    padding: 34px 20px 0 20px;
+  }
+
   .block-6 .list-6 {
     z-index: 0;
   }
@@ -6721,6 +7075,72 @@ section {
   }
 
   .block-6 .right-block .txt {
+    margin-bottom: 30px;
+  }
+
+  .block-7 {
+    padding: 30px 0;
+  }
+
+  .block-7 .subtitle {
+    text-align: center;
+  }
+
+  .block-7 .title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .block-7 .accardion-body {
+    margin-bottom: 40px;
+    padding: 20px 20px 20px 20px;
+  }
+
+  .block-8 {
+    padding-bottom: 30px;
+  }
+
+  .block-8 .title {
+    margin-bottom: 30px;
+  }
+
+  .block-8 .iconbox {
+    margin-bottom: 20px;
+  }
+
+  .block-8 .iconbox .icon {
+    margin-bottom: 20px;
+  }
+
+  .block-9 {
+    padding-bottom: 30px;
+  }
+
+  .block-9 .title {
+    margin-bottom: 30px;
+  }
+
+  .block-9 .iconbox {
+    margin-bottom: 30px;
+  }
+
+  .block-9 .iconbox .iconbox-body {
+    padding: 30px 20px 20px 30px;
+  }
+
+  .block-10 {
+    padding: 30px 0;
+  }
+
+  .block-10 .dollar-l {
+    display: none;
+  }
+
+  .block-10 .dollar-r {
+    display: none;
+  }
+
+  .block-10 .img-box {
     margin-bottom: 30px;
   }
 }
