@@ -1732,39 +1732,41 @@ input[type=text],
 input[type=number],
 input[type=password],
 select {
-  border: 1px solid #c2c5cc;
+  border-bottom: 2px solid #666666;
+  background: rgba(42, 42, 43, 0.06);
+  border-radius: 4px;
   width: 100%;
   padding: 15px;
 }
 
 input[type=text]::-webkit-input-placeholder, input[type=number]::-webkit-input-placeholder, input[type=password]::-webkit-input-placeholder, select::-webkit-input-placeholder {
-  color: #bbc3c4;
+  color: #1d976c;
 }
 
 input[type=text]::-moz-placeholder, input[type=number]::-moz-placeholder, input[type=password]::-moz-placeholder, select::-moz-placeholder {
-  color: #bbc3c4;
+  color: #1d976c;
 }
 
 input[type=text]:-ms-input-placeholder, input[type=number]:-ms-input-placeholder, input[type=password]:-ms-input-placeholder, select:-ms-input-placeholder {
-  color: #bbc3c4;
+  color: #1d976c;
 }
 
 input[type=text]::-ms-input-placeholder, input[type=number]::-ms-input-placeholder, input[type=password]::-ms-input-placeholder, select::-ms-input-placeholder {
-  color: #bbc3c4;
+  color: #1d976c;
 }
 
 input[type=text]::placeholder,
 input[type=number]::placeholder,
 input[type=password]::placeholder,
 select::placeholder {
-  color: #bbc3c4;
+  color: #1d976c;
 }
 
 input[type=text]:focus,
 input[type=number]:focus,
 input[type=password]:focus,
 select:focus {
-  border: 1px solid #ffceb7;
+  border: 1px solid #1d976c;
 }
 
 input[type=text]:focus::-webkit-input-placeholder, input[type=number]:focus::-webkit-input-placeholder, input[type=password]:focus::-webkit-input-placeholder, select:focus::-webkit-input-placeholder {
@@ -1899,10 +1901,10 @@ section {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  font-family: TT Norms Pro;
+  font-family: "TT Norms Pro";
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: calc(14px + 4 * (100vw / 1920));
   line-height: 22px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -1911,7 +1913,8 @@ section {
 
 .btn:hover {
   background: #1d976c;
-  color: #1d976c;
+  -webkit-box-shadow: 0px 10px 30px rgba(44, 96, 78, 0.3);
+          box-shadow: 0px 10px 30px rgba(44, 96, 78, 0.3);
 }
 
 .title {
@@ -3054,6 +3057,299 @@ section {
   line-height: 130%;
   text-align: center;
   color: #5f5f5f;
+}
+
+.block-11 {
+  position: relative;
+  padding: 100px 0;
+  display: block;
+  background: center/cover no-repeat url(../img/bg11-bg.png);
+}
+
+.block-11 .subtitle {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #f7f9fa;
+  margin-bottom: 10px;
+}
+
+.block-11 .title {
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.block-11 .info-box {
+  display: block;
+}
+
+.block-11 .info-box .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+}
+
+.block-11 .info-box .item:last-child {
+  margin-bottom: 0;
+}
+
+.block-11 .info-box .item .icon {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60px;
+          flex: 0 0 60px;
+}
+
+.block-11 .info-box .item .txt {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 130%;
+  color: #f7f9fa;
+}
+
+.block-12 {
+  position: relative;
+  display: block;
+  padding: 100px 0;
+}
+
+.block-12 .list-img {
+  position: absolute;
+  top: -2%;
+  left: 0;
+}
+
+.block-12 .sale-block {
+  display: block;
+}
+
+.block-12 .sale-block .subtitle {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #3b3e3d;
+  margin-bottom: 15px;
+}
+
+.block-12 .sale-block .title {
+  text-align: left;
+  margin-bottom: 40px;
+  line-height: 160%;
+}
+
+.block-12 .sale-block .infobox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 34px;
+     -moz-column-gap: 34px;
+          column-gap: 34px;
+}
+
+.block-12 .sale-block .infobox .icon {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 125px;
+          flex: 0 0 125px;
+}
+
+.block-12 .sale-block .infobox .txt {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #3b3e3d;
+}
+
+.block-12 .form-block {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 50px 40px;
+}
+
+.block-12 .form-block .form-title {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 130%;
+  text-align: center;
+  color: #2a2a2b;
+  margin-bottom: 10px;
+}
+
+.block-12 .form-block p {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+  text-transform: lowercase;
+  color: #6d6d6d;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.block-12 .form-block label span {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #666666;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.block-12 .form-block label input {
+  margin-bottom: 20px;
+}
+
+.block-13 {
+  position: relative;
+  display: block;
+  padding: 50px 0;
+}
+
+.block-13 .title {
+  margin-bottom: 50px;
+}
+
+.block-13 .container {
+  position: relative;
+}
+
+.block-13 .dotted {
+  position: absolute;
+  left: -3%;
+  top: 11%;
+}
+
+.block-13 .infobox {
+  display: block;
+  padding: 115px 0;
+}
+
+.block-13 .infobox .number {
+  font-style: normal;
+  font-weight: 900;
+  font-size: calc(40px + 20 * (100vw / 1920));
+  line-height: 120%;
+  font-family: "TT Norms Pro";
+  color: #5fd68b;
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+.block-13 .infobox .txt {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: calc(12px + 2 * (100vw / 1920));
+  line-height: 120%;
+  color: rgba(12, 11, 10, 0.8);
+}
+
+.block-14 {
+  position: relative;
+  padding: 100px 0;
+  display: block;
+  background-image: url(../img/concurs-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.block-14 .block-left .concurs {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  text-transform: uppercase;
+  color: #1d976c;
+  margin-bottom: 20px;
+}
+
+.block-14 .block-left .title {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.block-14 .block-left .subtitle {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 150%;
+  color: #666666;
+  margin-bottom: 40px;
+}
+
+.block-14 .block-left .concurs-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.block-14 .block-left .concurs-box .box {
+  background: #f7f9fa;
+  -webkit-box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 48%;
+          flex: 1 1 48%;
+  padding: 36px 20px;
+  text-align: center;
+}
+
+.block-14 .block-left .concurs-box .box p {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 130%;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.block-14 .block-left .concurs-box .box .txt {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  color: #000000;
 }
 
 @media (min-width: 768px) {
@@ -6948,6 +7244,27 @@ section {
   .block-4 .product-box .product-name {
     padding: 0 25%;
   }
+
+  .block-13 .dotted {
+    left: -5%;
+    top: 16%;
+  }
+
+  .block-13 .dotted {
+    display: none;
+  }
+
+  .block-13 .infobox {
+    padding: 60px 0;
+  }
+
+  .block-13 .infobox {
+    padding: 20px 0;
+  }
+
+  .block-13 .infobox .number {
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -7143,6 +7460,59 @@ section {
   .block-10 .img-box {
     margin-bottom: 30px;
   }
+
+  .block-11 {
+    padding: 30px 0;
+  }
+
+  .block-11 .subtitle {
+    text-align: center;
+  }
+
+  .block-11 .title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .block-11 .info-box .item {
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .block-12 {
+    padding: 30px 0;
+  }
+
+  .block-12 .sale-block {
+    margin-bottom: 30px;
+  }
+
+  .block-12 .sale-block .subtitle {
+    text-align: center;
+  }
+
+  .block-12 .sale-block .title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .block-12 .sale-block .infobox {
+    -webkit-column-gap: 24px;
+       -moz-column-gap: 24px;
+            column-gap: 24px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+
+  .block-12 .form-block {
+    padding: 20px 20px;
+  }
 }
 
 @media (max-width: 580px) {
@@ -7335,6 +7705,8 @@ section {
 .block-4 .product-box{background:-webkit-gradient(linear, left bottom, left top, color-stop(38.05%, #ffffff), to(rgba(255, 255, 255, 0))), url(9aabf3cdeb657d0e868b0c4f2a51619d_1587481090_1000_750.webp), #ffffff}
 .block-4 .product-box{background:-o-linear-gradient(bottom, #ffffff 38.05%, rgba(255, 255, 255, 0) 100%), url(9aabf3cdeb657d0e868b0c4f2a51619d_1587481090_1000_750.webp), #ffffff}
 .block-4 .product-box{background:linear-gradient(360deg, #ffffff 38.05%, rgba(255, 255, 255, 0) 100%), url(9aabf3cdeb657d0e868b0c4f2a51619d_1587481090_1000_750.webp), #ffffff}
+.block-11{background:center/cover no-repeat url(../img/bg11-bg.webp)}
+.block-14{background-image:url(../img/concurs-bg.webp)}
 }
 
  @media (min-width: 768px){
