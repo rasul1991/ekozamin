@@ -24,17 +24,15 @@
     display: block;
   }
 }
-
-._iconArrow:before {
-  content: "\e903";
-  color: #5f5f5f;
-}
-._icontelegram:before {
+._iconyoutube:before {
   content: "\e900";
 }
-._iconfacebook:before {
+._icontelegram:before {
   content: "\e901";
 }
-._iconinstagram:before {
+._iconfacebook:before {
   content: "\e902";
+}
+._iconinstagram:before {
+  content: "\e903";
 }

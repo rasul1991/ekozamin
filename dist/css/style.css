@@ -67,21 +67,20 @@
   display: block;
 }
 
-._iconArrow:before {
-  content: "";
-  color: #5f5f5f;
-}
-
-._icontelegram:before {
+._iconyoutube:before {
   content: "";
 }
 
-._iconfacebook:before {
+._icontelegram:before {
   content: "";
 }
 
-._iconinstagram:before {
+._iconfacebook:before {
   content: "";
+}
+
+._iconinstagram:before {
+  content: "";
 }
 
 .sr-only {
@@ -1793,7 +1792,6 @@ select:focus::placeholder {
 }
 
 textarea {
-  border: 1px solid #d3dcde;
   width: 100% !important;
   padding: 15px;
   text-indent: 20px;
@@ -1822,7 +1820,7 @@ textarea::placeholder {
 }
 
 textarea:focus {
-  border: 1px solid #ffceb7;
+  border: 1px solid #1d976c;
 }
 
 textarea:focus::-webkit-input-placeholder {
@@ -3275,11 +3273,9 @@ section {
 
 .block-14 {
   position: relative;
-  padding: 100px 0;
+  padding: 70px 0;
   display: block;
-  background-image: url(../img/concurs-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #dbdbdb;
 }
 
 .block-14 .block-left .concurs {
@@ -3325,8 +3321,8 @@ section {
           box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.12);
   border-radius: 2px;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 48%;
-          flex: 1 1 48%;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
   padding: 36px 20px;
   text-align: center;
 }
@@ -3350,6 +3346,332 @@ section {
   line-height: 130%;
   text-align: center;
   color: #000000;
+}
+
+.block-14 .block-right {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.block-14 .block-right .gift {
+  display: block;
+}
+
+.block-14 .block-right .pulse {
+  position: absolute;
+  left: 45%;
+  margin: 0;
+  top: 50%;
+  z-index: 2;
+}
+
+.block-15 {
+  padding: 100px 0;
+  position: relative;
+  display: block;
+  background: #f7f9fa;
+}
+
+.block-15 .title {
+  margin-bottom: 60px;
+}
+
+.block-15 .testimonials {
+  text-align: center;
+}
+
+.block-16 {
+  position: relative;
+  display: block;
+  padding: 100px 0;
+}
+
+.block-16 .container {
+  position: relative;
+}
+
+.block-16 .list-1 {
+  position: absolute;
+  left: 0;
+  bottom: -8%;
+}
+
+.block-16 .list-2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.block-16 .title {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.block-16 .accordion__item {
+  margin: 5px auto;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+  background: #fff;
+}
+
+.block-16 .accordion__item:last-child {
+  margin-bottom: 0px;
+}
+
+.block-16 .accordion__item .accordion__title_s {
+  position: relative;
+  display: block;
+  padding: 13px 60px 15px 13px;
+  margin-bottom: 2px;
+  text-decoration: none;
+  border-radius: 3px;
+  -webkit-transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  color: #5f5f5f;
+}
+
+.block-16 .accordion__item .accordion__title_s .accordion__arrow {
+  position: absolute;
+  top: 44%;
+  right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-weight: 700;
+  margin-right: 5px;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.block-16 .accordion__item .accordion__rotate img {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.block-16 .accordion__item .accordion__content {
+  padding: 30px;
+  margin-bottom: 2px;
+  display: none;
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #4b4b4b;
+  background: #ffffff;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.block-16 .accordion__item .accordion__content .question-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.block-16 .accordion__item .accordion__content .question-link .link {
+  font-family: "TT Norms Pro";
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: right;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #1d976c;
+  margin-top: 25px;
+}
+
+.block-16 .accordion__item .accordion__content .question-link .link:hover {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+.block-16 .accordion__item .accordion__arrow-item {
+  font-weight: 700;
+}
+
+.block-17 {
+  padding: 100px 0;
+  position: relative;
+  display: block;
+  background-color: #666666;
+}
+
+.block-17 .form-box .title {
+  text-align: left;
+  color: #fff;
+}
+
+.block-17 .form-box p {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 160%;
+  color: #ffffff;
+}
+
+.block-17 form label span {
+  color: #c1c9d6;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.block-17 form input {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  border-bottom: 1px solid #c1c9d6;
+  margin-bottom: 20px;
+}
+
+.block-17 form textarea {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  border-bottom: 1px solid #c1c9d6;
+  margin-bottom: 40px;
+}
+
+.block-17 form .btn {
+  width: 70%;
+  float: right;
+}
+
+footer .footer-top {
+  background: #333;
+  padding: 40px 0;
+}
+
+footer .footer-top .call-centre .title {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 130%;
+  color: #aba7b2;
+  text-align: left;
+}
+
+footer .footer-top .call-centre .phone a {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f3f3f3;
+}
+
+footer .footer-top .adress .title {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 130%;
+  color: #aba7b2;
+  text-align: left;
+}
+
+footer .footer-top .adress .adr {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f3f3f3;
+}
+
+footer .footer-top .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+footer .footer-top .social li a {
+  font-size: 32px;
+}
+
+footer .footer-top .social li a .icon {
+  color: #ababab;
+}
+
+footer .footer-top .social li a .icon:hover {
+  color: #1d976c;
+}
+
+footer .footer-bottom {
+  background: #282828;
+  padding: 22px 0;
+}
+
+footer .footer-bottom .pm-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-bottom .pm-logo .img {
+  display: block;
+}
+
+footer .footer-bottom .pm-logo .txt p {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 14px;
+  text-transform: uppercase;
+  -webkit-font-feature-settings: "liga" off;
+          font-feature-settings: "liga" off;
+  color: #767676;
+  margin-bottom: 10px;
+}
+
+footer .footer-bottom .pm-logo .txt span {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  -webkit-font-feature-settings: "liga" off;
+          font-feature-settings: "liga" off;
+  color: #767676;
 }
 
 @media (min-width: 768px) {
@@ -7236,6 +7558,17 @@ section {
   }
 }
 
+@media (max-width: 1440px) {
+  .block-14 .block-right .gift {
+    margin-top: 25%;
+  }
+
+  .block-14 .block-right .pulse {
+    top: 40%;
+    left: 40%;
+  }
+}
+
 @media (max-width: 1200px) {
   .head-block .circl {
     width: 65%;
@@ -7267,9 +7600,30 @@ section {
   }
 }
 
+@media (max-width: 1199px) {
+  .block-14 .block-right .pulse {
+    top: 28%;
+  }
+
+  .block-17 .form-box .title {
+    font-size: calc(20px + 15 * (100vw / 1920));
+  }
+}
+
 @media (max-width: 1000px) {
   .block-4 .product-box .product-name {
     padding: 0 10%;
+  }
+}
+
+@media (max-width: 999px) {
+  .block-14 .block-right .gift {
+    margin-top: 0%;
+  }
+
+  .block-14 .block-right .pulse {
+    top: 51%;
+    left: 45%;
   }
 }
 
@@ -7513,6 +7867,99 @@ section {
   .block-12 .form-block {
     padding: 20px 20px;
   }
+
+  .block-14 {
+    padding: 30px 0;
+  }
+
+  .block-14 .block-left .concurs {
+    text-align: center;
+  }
+
+  .block-14 .block-left .title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .block-14 .block-left .subtitle {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .block-14 .block-left .concurs-box .box {
+    padding: 15px 10px;
+  }
+
+  .block-15 {
+    padding: 30px 0;
+  }
+
+  .block-15 .title {
+    margin-bottom: 30px;
+  }
+
+  .block-15 .testimonials {
+    margin-bottom: 30px;
+  }
+
+  .block-16 {
+    padding: 30px 0;
+  }
+
+  .block-16 .title {
+    margin-bottom: 20px;
+  }
+
+  .block-17 {
+    padding: 30px 0;
+  }
+
+  .block-17 .form-box .title {
+    text-align: center;
+  }
+
+  .block-17 .form-box p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .block-17 form .btn {
+    width: 100%;
+    float: none;
+  }
+
+  footer .footer-top {
+    padding: 30px 0;
+  }
+
+  footer .footer-top .logo {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  footer .footer-top .call-centre .title {
+    text-align: center;
+  }
+
+  footer .footer-top .call-centre {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  footer .footer-top .adress .title {
+    text-align: center;
+  }
+
+  footer .footer-top .adress {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  footer .footer-top .social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media (max-width: 580px) {
@@ -7706,7 +8153,6 @@ section {
 .block-4 .product-box{background:-o-linear-gradient(bottom, #ffffff 38.05%, rgba(255, 255, 255, 0) 100%), url(9aabf3cdeb657d0e868b0c4f2a51619d_1587481090_1000_750.webp), #ffffff}
 .block-4 .product-box{background:linear-gradient(360deg, #ffffff 38.05%, rgba(255, 255, 255, 0) 100%), url(9aabf3cdeb657d0e868b0c4f2a51619d_1587481090_1000_750.webp), #ffffff}
 .block-11{background:center/cover no-repeat url(../img/bg11-bg.webp)}
-.block-14{background-image:url(../img/concurs-bg.webp)}
 }
 
  @media (min-width: 768px){
@@ -7757,6 +8203,14 @@ section {
 
 }
 
+ @media (max-width: 1440px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
  @media (max-width: 1200px){
 
 @supports (-webkit-appearance:none){
@@ -7765,7 +8219,23 @@ section {
 
 }
 
+ @media (max-width: 1199px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
  @media (max-width: 1000px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 999px){
 
 @supports (-webkit-appearance:none){
 
