@@ -34,4 +34,24 @@ jQuery(document).ready(function ($) {
             $('.accordion__arrow', this).toggleClass('accordion__rotate');
         });
     });
+    $('#video-popup').magnificPopup({
+        items: [
+            {
+                src: 'https://www.youtube.com/watch?v=QBQxjSOn4Pc',
+                type: 'iframe' // this overrides default type
+            },
+        ]
+    });
+    $('#video-popup-head').magnificPopup({
+        items: [
+            {
+                src: 'https://www.youtube.com/watch?v=kJ77otj1_-I',
+                type: 'iframe' // this overrides default type
+            },
+        ]
+    });
+    $('.open-popup-link').magnificPopup({
+        type: 'inline',
+        midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+    });
 });

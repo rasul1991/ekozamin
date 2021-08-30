@@ -71,6 +71,10 @@
   content: "";
 }
 
+._iconArrow:before {
+  content: "";
+}
+
 ._icontelegram:before {
   content: "";
 }
@@ -1600,7 +1604,6 @@ h6 {
   font-size: 50px;
   color: #ffffff;
   margin-top: 13%;
-  z-index: 9999;
 }
 
 .pulse .pulse-in {
@@ -1674,8 +1677,9 @@ h6 {
   background: #fff;
   padding: 40px;
   width: auto;
-  max-width: 500px;
+  max-width: 400px;
   margin: 20px auto;
+  border-radius: 16px;
 }
 
 .white-popup .section-title h3 {
@@ -3672,6 +3676,47 @@ footer .footer-bottom .pm-logo .txt span {
   -webkit-font-feature-settings: "liga" off;
           font-feature-settings: "liga" off;
   color: #767676;
+}
+
+#popup .form-block .form-title {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 130%;
+  text-align: center;
+  color: #2a2a2b;
+  margin-bottom: 10px;
+}
+
+#popup .form-block p {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+  text-transform: lowercase;
+  color: #6d6d6d;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+#popup .form-block label span {
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #666666;
+  margin-bottom: 15px;
+  display: block;
+}
+
+#popup .form-block label input {
+  margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
