@@ -1519,6 +1519,10 @@ aside {
   display: block;
 }
 
+html {
+  overflow: overlay;
+}
+
 html,
 body {
   font-family: "TT Norms Pro";
@@ -1670,6 +1674,10 @@ h6 {
             transform: scale(2.5);
     opacity: 0;
   }
+}
+
+.hidden {
+  display: none !important;
 }
 
 .white-popup {
@@ -3270,7 +3278,7 @@ section {
   font-family: "TT Norms Pro";
   font-style: normal;
   font-weight: bold;
-  font-size: calc(12px + 2 * (100vw / 1920));
+  font-size: calc(14px + 2 * (100vw / 1920));
   line-height: 120%;
   color: rgba(12, 11, 10, 0.8);
 }
@@ -3717,6 +3725,70 @@ footer .footer-bottom .pm-logo .txt span {
 
 #popup .form-block label input {
   margin-bottom: 20px;
+}
+
+#button {
+  display: inline-block;
+  background-color: #1d976c;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  -webkit-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  -o-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 2000;
+  padding: 19px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#button:hover {
+  background: #fff;
+  border: 1px solid #1d976c;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.error-name-text {
+  color: red !important;
+}
+
+#sucess-form {
+  text-align: center;
+}
+
+#sucess-form h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: #1d976c;
+}
+
+#form-succes-2,
+#form-succes-3 {
+  display: block;
+  margin-top: 2em;
+  background: rgba(43, 168, 5, 0.5);
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  border-radius: 32px;
+}
+
+#form-succes-2 p,
+#form-succes-3 p {
+  color: #fff;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
 }
 
 @media (min-width: 768px) {

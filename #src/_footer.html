@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-3 col-lg-3">
-                    <div class="logo">
+                    <div class="logo" data-aos="fade-right" data-aos-duration="1100">
                         <a href="#">
                             <svg width="100" height="100" viewBox="0 0 100 100" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -88,13 +88,13 @@
                     </div>
                 </div>
                 <div class="col-md-2 col-lg-2">
-                    <div class="call-centre">
+                    <div class="call-centre" data-aos="fade-up" data-aos-duration="1200">
                         <p class="title">Колл марказ:</p>
                         <p class="phone"><a href="tel:+998732400005">+998 (73) <b>240-00-05</b></a></p>
                     </div>
                 </div>
                 <div class="col-md-3 col-lg-3">
-                    <div class="adress">
+                    <div class="adress" data-aos="fade-up" data-aos-duration="1300">
                         <p class="title">Манзил:</p>
                         <p class="adr">
                             Ўзбекистон Фарғона вилояти, Марғилон шахри, Аль Фарғоний кўчаси 18-уй.
@@ -102,7 +102,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-4">
-                    <ul class="social">
+                    <ul class="social" data-aos="fade-left" data-aos-duration="1400">
                         <li>
                             <a href="https://www.instagram.com/eko_zamin/">
                                 <span class="icon _iconinstagram"></span>
@@ -144,35 +144,35 @@
         </div>
     </div>
 </footer>
+<a id="button" class="show"><img src="img/arrow-bot.svg" alt=""></a>
 <div id="popup" class="white-popup mfp-hide">
-    <div class="form-block">
+    <div id="sucess-form" class="hidden">
+        <h2>Сўровингиз қабул <br>қилинди</h2>
+        <p>Сиз билан тез орада боғланамиз</p>
+    </div>
+    <div class="form-block" id="form-w">
         <form action="#">
             <h3 class="form-title">20% чегирма билан буюртма бериш учун</h3>
             <p>ушбу формани тўлдиринг</p>
             <label for="name">
-                <span>Ismingiz</span>
-                <input type="text" id="name" name="name" placeholder="...">
+                <span>Исмингиз</span>
+                <input type="text" id="name" name="name" placeholder="..." required>
+                <span class="error-name-text hidden">Майдон тўлдирилиши шарт</span>
             </label>
             <label for="phone">
-                <span>Telefon raqamingiz</span>
-                <input type="text" id="phone" name="phone" placeholder="+998 9. ... .. ..">
+                <span>Телефон рақамингиз</span>
+                <input type="text" id="phone" name="phone" class="phone-mask" placeholder="+998 9. ... .. .." required>
+                <span class="error-name-text hidden">Майдон тўлдирилиши шарт</span>
             </label>
-            <button type="submit" class="btn">Буюртма бериш</button>
+            <button type="submit" class="btn" id="sendformData">Буюртма бериш</button>
         </form>
     </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
-
-<!-- <script src="js/slick.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.3/rangeslider.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.mask.min.js"></script>
-<script src="js/aos.js"></script> -->
-
-
+<script src="js/aos.js"></script>
 <script src="js/script.min.js"></script>
 </body>
 

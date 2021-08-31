@@ -43,6 +43,9 @@ header,
 aside {
 	display: block;
 }
+html {
+	overflow: overlay;
+}
 html,
 body {
 	font-family: $font-family;
@@ -164,6 +167,9 @@ h6 {
 		transform: scale(2.5);
 		opacity: 0;
 	}
+}
+.hidden {
+	display: none !important;
 }
 .white-popup {
 	position: relative;
@@ -1718,7 +1724,7 @@ section {
 			font-family: $font-family;
 			font-style: normal;
 			font-weight: bold;
-			font-size: calc(12px + 2 * (100vw / 1920));
+			font-size: calc(14px + 2 * (100vw / 1920));
 			line-height: 120%;
 			color: rgba(12, 11, 10, 0.8);
 		}
@@ -2191,5 +2197,56 @@ footer {
 				margin-bottom: 20px;
 			}
 		}
+	}
+}
+#button {
+	display: inline-block;
+	background-color: $main-color;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border-radius: 4px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 2000;
+	padding: 19px;
+	transform: rotate(180deg);
+	&:hover {
+		background: #fff;
+		border: 1px solid $main-color;
+	}
+}
+#button.show {
+	opacity: 1;
+	visibility: visible;
+}
+.error-name-text {
+	color: red !important;
+}
+#sucess-form {
+	text-align: center;
+	h2 {
+		font-size: 2em;
+		margin-bottom: 1em;
+		color: $main-color;
+	}
+}
+#form-succes-2,
+#form-succes-3 {
+	display: block;
+	margin-top: 2em;
+	background: rgb(43, 168, 5, 0.5);
+	text-align: center;
+	padding: 10px;
+	color: #fff;
+	border-radius: 32px;
+	p {
+		color: #fff;
+		font-size: 1.5em;
+		margin-bottom: 0.5em;
 	}
 }
